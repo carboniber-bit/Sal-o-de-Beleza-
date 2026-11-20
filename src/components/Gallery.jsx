@@ -41,7 +41,7 @@ export default function Gallery() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="reveal flex flex-wrap items-end justify-between gap-6">
           <div className="max-w-xl">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-gold-600">Galeria</p>
+            <p className="text-[11px] font-condensed font-semibold uppercase tracking-[0.28em] text-gold-600">Galeria</p>
             <h2 className="mt-3 font-display text-4xl text-ink-900 sm:text-5xl">
               Nosso trabalho <em className="italic text-petal-600">fala por nós</em>
             </h2>

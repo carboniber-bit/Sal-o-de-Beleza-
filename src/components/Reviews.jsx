@@ -22,7 +22,7 @@ export default function Reviews() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
           <div>
-            <p className="reveal text-[11px] font-semibold uppercase tracking-[0.28em] text-gold-400">Avaliações</p>
+            <p className="reveal text-[11px] font-condensed font-semibold uppercase tracking-[0.28em] text-gold-400">Avaliações</p>
             <h2 className="reveal mt-3 font-display text-4xl leading-tight text-blush-100 sm:text-5xl" style={{ '--reveal-delay': '80ms' }}>
               Quem vem, <em className="italic text-petal-300">volta</em> — e recomenda
             </h2>

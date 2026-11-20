@@ -55,7 +55,7 @@ export const CATEGORIES = [
     id: 'unhas',
     label: 'Unhas',
     icon: 'nail',
-    image: '/images/hero-unhas.png',
+    image: '/images/unhas-poas.jpg',
     blurb: 'Manicure e pedicure caprichosas, do clássico ao nail art — a especialidade da casa.',
     services: [
       { name: 'Manicure tradicional', desc: 'Cutilagem cuidadosa + esmaltação', price: 35, time: '45 min' },
@@ -70,7 +70,7 @@ export const CATEGORIES = [
     id: 'cabelo',
     label: 'Cabelo',
     icon: 'hair',
-    image: '/images/cabelo.png',
+    image: '/images/cabelo-liso.jpg',
     blurb: 'Corte, tratamento e finalização para você sair pronta para qualquer ocasião.',
     services: [
       { name: 'Corte feminino', desc: 'Consulta de visagismo + finalização', price: 70, time: '1h' },
@@ -85,7 +85,7 @@ export const CATEGORIES = [
     id: 'cilios',
     label: 'Cílios & Sobrancelhas',
     icon: 'lash',
-    image: '/images/cilios.png',
+    image: '/images/cilios-volume.jpg',
     blurb: 'Olhar marcante todos os dias, sem esforço — extensão de cílios e design de sobrancelhas.',
     services: [
       { name: 'Extensão de cílios clássica', desc: 'Fio a fio, efeito natural', price: 120, time: '2h' },
@@ -98,16 +98,25 @@ export const CATEGORIES = [
   },
   {
     id: 'massagem',
-    label: 'Massagem',
+    label: 'Massagem & Terapias',
     icon: 'spa',
-    image: '/images/massagem.png',
-    blurb: 'Um momento só seu: relaxamento e bem-estar em um ambiente acolhedor.',
+    image: '/images/massagem-pedras.jpg',
+    blurb: 'Um momento só seu: relaxamento, bem-estar e terapias integrativas em um ambiente acolhedor.',
     services: [
       { name: 'Massagem relaxante', desc: 'Corpo inteiro, óleos aromáticos', price: 100, time: '1h' },
+      { name: 'Massagem com pedras quentes', desc: 'Calor profundo que dissolve a tensão', price: 120, time: '1h' },
       { name: 'Massagem modeladora', desc: 'Movimentos intensos e drenantes', price: 110, time: '1h' },
       { name: 'Drenagem linfática', desc: 'Reduz inchaço e ativa a circulação', price: 110, time: '1h' },
       { name: 'Massagem nas costas', desc: 'Alívio de tensão em cervical e lombar', price: 60, time: '30 min' },
       { name: 'Spa dos pés', desc: 'Escalda-pés + esfoliação + massagem', price: 65, time: '40 min' },
+      { name: 'Acupuntura', desc: 'Equilíbrio energético e alívio de dores', price: null, time: 'sob consulta' },
+      { name: 'Acupuntura + laser', desc: 'Estímulo de pontos sem agulhas', price: null, time: 'sob consulta' },
+      { name: 'Auriculoterapia', desc: 'Terapia por pontos da orelha', price: null, time: 'sob consulta' },
+      { name: 'Fitoacupuntura', desc: 'Acupuntura com injeção de fitoterápicos', price: null, time: 'sob consulta' },
+      { name: 'Laser terapêutico', desc: 'Ação anti-inflamatória e analgésica', price: null, time: 'sob consulta' },
+      { name: 'Ventosaterapia', desc: 'Sucção que libera tensões musculares', price: null, time: 'sob consulta' },
+      { name: 'Cone chinês', desc: 'Terapia térmica de relaxamento profundo', price: null, time: 'sob consulta' },
+      { name: 'Moxaterapia', desc: 'Calor de artemísia em pontos energéticos', price: null, time: 'sob consulta' },
     ],
   },
   {
@@ -128,7 +137,7 @@ export const CATEGORIES = [
     id: 'estetica',
     label: 'Estética',
     icon: 'face',
-    image: '/images/sobrancelha.png',
+    image: '/images/sala-massagem.jpg',
     blurb: 'Cuidados faciais e corporais para uma pele saudável e radiante.',
     services: [
       { name: 'Limpeza de pele profunda', desc: 'Extração + alta frequência + máscara', price: 110, time: '1h20' },
@@ -140,13 +149,26 @@ export const CATEGORIES = [
 ]
 
 export const GALLERY = [
-  { src: '/images/hero-unhas.png', cat: 'unhas', title: 'Amêndoa rosé com foil dourado', tall: true },
-  { src: '/images/cilios.png', cat: 'cilios', title: 'Extensão de cílios — efeito natural' },
-  { src: '/images/sobrancelha.png', cat: 'cilios', title: 'Design de sobrancelhas com henna' },
-  { src: '/images/cabelo.png', cat: 'cabelo', title: 'Ondas modeladas com brilho', tall: true },
-  { src: '/images/massagem.png', cat: 'massagem', title: 'Massagem relaxante com aromaterapia' },
+  { src: '/images/unhas-dourado.jpg', cat: 'unhas', title: 'Dourado metalizado — a cor da casa', tall: true },
+  { src: '/images/cabelo-ondas.jpg', cat: 'cabelo', title: 'Ondas modeladas com brilho', tall: true },
+  { src: '/images/cilios-volume.jpg', cat: 'cilios', title: 'Extensão de cílios — olhar marcante' },
+  { src: '/images/unhas-poas.jpg', cat: 'unhas', title: 'Nail art — poá preto e branco' },
+  { src: '/images/salao.jpg', cat: 'salao', title: 'Nosso espaço: recepção e atendimento', tall: true },
+  { src: '/images/unhas-vermelho.jpg', cat: 'unhas', title: 'Clássico vermelho intenso' },
+  { src: '/images/cabelo-cachos.jpg', cat: 'cabelo', title: 'Cachos definidos e iluminados', tall: true },
+  { src: '/images/sobrancelha.jpg', cat: 'cilios', title: 'Design de sobrancelhas' },
+  { src: '/images/unhas-glitter.jpg', cat: 'unhas', title: 'Azul sereno com glitter', tall: true },
+  { src: '/images/massagem-pedras.jpg', cat: 'massagem', title: 'Massagem com pedras quentes' },
+  { src: '/images/cabelo-liso.jpg', cat: 'cabelo', title: 'Iluminado dourado em fios lisos', tall: true },
+  { src: '/images/unhas-gel.jpg', cat: 'unhas', title: 'Efeito gel — azul vibrante' },
+  { src: '/images/cilios-natural.jpg', cat: 'cilios', title: 'Cílios fio a fio — efeito natural', tall: true },
+  { src: '/images/unhas-marinho.jpg', cat: 'unhas', title: 'Marinho fosco + azul magnético' },
+  { src: '/images/sala-massagem.jpg', cat: 'massagem', title: 'Sala de massagem e estética' },
+  { src: '/images/unhas-prata.jpg', cat: 'unhas', title: 'Prata cromada espelhada' },
+  { src: '/images/cabelo-penteado.jpg', cat: 'cabelo', title: 'Semipreso com ondas glam', tall: true },
+  { src: '/images/unhas-azul.jpg', cat: 'unhas', title: 'Azul royal em todos os tons de pele' },
+  { src: '/images/unhas-vinho.jpg', cat: 'unhas', title: 'Vinho profundo — unhas bem feitas', tall: true },
   { src: '/images/maquiagem.png', cat: 'maquiagem', title: 'Make social — pele glow' },
-  { src: '/images/salao.png', cat: 'salao', title: 'Nosso cantinho: café, bolo e carinho', tall: true },
 ]
 
 export const GALLERY_FILTERS = [
@@ -154,7 +176,7 @@ export const GALLERY_FILTERS = [
   { id: 'unhas', label: 'Unhas' },
   { id: 'cilios', label: 'Cílios & Sobrancelhas' },
   { id: 'cabelo', label: 'Cabelo' },
-  { id: 'massagem', label: 'Massagem' },
+  { id: 'massagem', label: 'Massagem & Terapias' },
   { id: 'maquiagem', label: 'Maquiagem' },
   { id: 'salao', label: 'O salão' },
 ]

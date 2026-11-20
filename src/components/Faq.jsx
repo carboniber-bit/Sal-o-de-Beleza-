@@ -21,7 +21,7 @@ export default function Faq() {
       <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-b from-white via-blush-50 to-blush-100" />
       <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
-          <p className="reveal text-[11px] font-semibold uppercase tracking-[0.28em] text-gold-600">Dúvidas frequentes</p>
+          <p className="reveal text-[11px] font-condensed font-semibold uppercase tracking-[0.28em] text-gold-600">Dúvidas frequentes</p>
           <h2 className="reveal mt-3 font-display text-4xl leading-tight text-ink-900 sm:text-5xl" style={{ '--reveal-delay': '80ms' }}>
             Perguntou, <em className="italic text-petal-600">respondemos</em>
           </h2>

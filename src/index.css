@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Playfair Display", Georgia, serif;
-  --font-body: "Jost", "Segoe UI", sans-serif;
+  --font-display: "Montserrat", "Segoe UI", sans-serif;
+  --font-body: "Roboto", "Segoe UI", sans-serif;
+  --font-condensed: "Roboto Condensed", "Roboto", sans-serif;
 
   --color-blush-50: #fff7f9;
   --color-blush-100: #fdeef3;
@@ -105,6 +106,11 @@ section[id] {
 
 .font-display {
   font-family: var(--font-display);
+}
+
+h1, h2 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 /* Revelação ao rolar */

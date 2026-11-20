@@ -38,7 +38,7 @@ export function WhyUs() {
     <section ref={ref} className="relative py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="reveal max-w-2xl">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-gold-600">Por que o Studio E?</p>
+          <p className="text-[11px] font-condensed font-semibold uppercase tracking-[0.28em] text-gold-600">Por que o Studio E?</p>
           <h2 className="mt-3 font-display text-4xl text-ink-900 sm:text-5xl">
             Um salão que cuida de <em className="italic text-petal-600">você</em> por inteiro
           </h2>
@@ -73,9 +73,9 @@ export default function About() {
         <div className="reveal relative order-2 lg:order-1">
           <div aria-hidden="true" className="absolute -left-5 -top-5 h-full w-full rounded-[2.5rem] border border-gold-400/50" />
           <img
-            src="/images/salao.png"
-            alt="Interior acolhedor do Studio E: mesa de manicure branca, cadeiras rosas e espelhos dourados"
-            className="relative aspect-[3/2] w-full rounded-[2.5rem] object-cover shadow-2xl shadow-petal-600/20"
+            src="/images/salao.jpg"
+            alt="Recepção do Studio E: balcão branco, cadeiras pretas e espelhos com LED na parede verde"
+            className="relative aspect-[4/5] w-full rounded-[2.5rem] object-cover shadow-2xl shadow-petal-600/20"
             loading="lazy"
           />
           <div className="absolute -bottom-7 left-6 right-6 sm:left-10 sm:right-auto rounded-2xl border border-blush-200 bg-white/95 px-6 py-4 shadow-xl backdrop-blur">
@@ -86,7 +86,7 @@ export default function About() {
               </div>
               <div className="h-10 w-px bg-blush-300" aria-hidden="true" />
               <div>
-                <p className="font-display text-3xl font-semibold text-gold-600">7</p>
+                <p className="font-display text-3xl font-semibold text-gold-600">8</p>
                 <p className="text-xs text-ink-500">especialidades</p>
               </div>
               <div className="h-10 w-px bg-blush-300" aria-hidden="true" />
@@ -99,7 +99,7 @@ export default function About() {
         </div>
 
         <div className="order-1 lg:order-2">
-          <p className="reveal text-[11px] font-semibold uppercase tracking-[0.28em] text-gold-600">O salão</p>
+          <p className="reveal text-[11px] font-condensed font-semibold uppercase tracking-[0.28em] text-gold-600">O salão</p>
           <h2 className="reveal mt-3 font-display text-4xl leading-tight text-ink-900 sm:text-5xl" style={{ '--reveal-delay': '80ms' }}>
             Elegância que se redefine <em className="italic text-petal-600">todos os dias</em>
           </h2>

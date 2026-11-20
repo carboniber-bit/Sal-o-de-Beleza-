@@ -12,7 +12,7 @@ export default function Contact() {
       <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-b from-blush-100 via-blush-50 to-white" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="reveal mx-auto max-w-2xl text-center">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-gold-600">Contato rápido</p>
+          <p className="text-[11px] font-condensed font-semibold uppercase tracking-[0.28em] text-gold-600">Contato rápido</p>
           <h2 className="mt-3 font-display text-4xl text-ink-900 sm:text-5xl">
             Pertinho de <em className="italic text-petal-600">você</em>, em Osasco
           </h2>

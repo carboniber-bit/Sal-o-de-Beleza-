@@ -32,7 +32,7 @@ export default function Services({ onBook }) {
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="reveal mx-auto max-w-2xl text-center">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-gold-600">Nossos serviços</p>
+          <p className="text-[11px] font-condensed font-semibold uppercase tracking-[0.28em] text-gold-600">Nossos serviços</p>
           <h2 className="mt-3 font-display text-4xl text-ink-900 sm:text-5xl">
             Tudo o que você ama, <em className="italic text-petal-600">em um só lugar</em>
           </h2>
@@ -107,8 +107,10 @@ export default function Services({ onBook }) {
                   </p>
                 </div>
                 <div className="text-right">
-                  <p className="text-[10px] uppercase tracking-wider text-ink-400">a partir de</p>
-                  <p className="font-display text-2xl font-semibold text-petal-600">{fmtPrice(s.price)}</p>
+                  <p className="text-[10px] uppercase tracking-wider text-ink-400">{s.price != null ? 'a partir de' : 'valores'}</p>
+                  <p className={`font-display font-semibold text-petal-600 ${s.price != null ? 'text-2xl' : 'text-base'}`}>
+                    {s.price != null ? fmtPrice(s.price) : 'Sob consulta'}
+                  </p>
                 </div>
                 <button
                   type="button"

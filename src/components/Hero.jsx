@@ -2,7 +2,7 @@ import { SALON, waLink } from '../data.js'
 import { useParallax } from '../hooks.js'
 import { Icon } from './Icons.jsx'
 
-const WORDS = ['Unhas', 'Cabelo', 'Cílios', 'Sobrancelhas', 'Massagem', 'Maquiagem', 'Estética facial', 'Estética corporal']
+const WORDS = ['Unhas', 'Cabelo', 'Cílios', 'Sobrancelhas', 'Massagem', 'Terapias integrativas', 'Maquiagem', 'Estética facial', 'Estética corporal']
 
 export default function Hero() {
   const parallaxRef = useParallax(0.08)
@@ -95,8 +95,8 @@ export default function Hero() {
             <div aria-hidden="true" className="absolute -inset-4 rounded-t-[12rem] rounded-b-[2.5rem] border border-gold-400/60" />
             <div aria-hidden="true" className="absolute -inset-4 rounded-t-[12rem] rounded-b-[2.5rem] bg-gradient-to-b from-gold-300/20 to-petal-300/20 blur-xl" />
             <img
-              src="/images/hero-unhas.png"
-              alt="Mãos com manicure amêndoa rosé e detalhes dourados feita no Studio E"
+              src="/images/unhas-dourado.jpg"
+              alt="Unhas com esmaltação dourada metalizada feita no Studio E"
               className="relative aspect-[4/5] w-full rounded-t-[11rem] rounded-b-[2rem] object-cover shadow-2xl shadow-petal-600/25"
             />
             <div className="absolute -left-6 bottom-16 animate-float rounded-2xl border border-blush-200 bg-white/95 px-4 py-3 shadow-xl shadow-petal-600/15 backdrop-blur">

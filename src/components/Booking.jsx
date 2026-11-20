@@ -175,7 +175,7 @@ export default function Booking({ prefill, notify }) {
 
       <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
         <div className="lg:sticky lg:top-28">
-          <p className="reveal text-[11px] font-semibold uppercase tracking-[0.28em] text-gold-600">Agende seu horário</p>
+          <p className="reveal text-[11px] font-condensed font-semibold uppercase tracking-[0.28em] text-gold-600">Agende seu horário</p>
           <h2 className="reveal mt-3 font-display text-4xl leading-tight text-ink-900 sm:text-5xl" style={{ '--reveal-delay': '80ms' }}>
             Seu momento de <em className="italic text-petal-600">cuidado</em> começa aqui
           </h2>
