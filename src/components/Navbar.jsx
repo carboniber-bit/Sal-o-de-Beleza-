@@ -40,7 +40,7 @@ export default function Navbar() {
         aria-valuemax={100}
       />
       <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 py-2.5">
-        <a href="#inicio" className="flex items-center gap-2 shrink-0" aria-label="Studio E — voltar ao início">
+        <a href="#inicio" className="flex items-center gap-2 shrink-0" aria-label="Studio E, voltar ao início">
           <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-white p-1 shadow-sm">
             <img src="/images/logo.png" alt="Logo Studio E Salão de Beleza" className="h-full w-full object-contain" />
           </span>

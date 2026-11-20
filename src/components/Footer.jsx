@@ -21,7 +21,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="mt-5 max-w-sm leading-relaxed text-blush-300/80">
-              Especialistas em estética facial e corporal. Unha, cabelo, cílios, massagem e maquiagem —
+              Especialistas em estética facial e corporal. Unha, cabelo, cílios, massagem e maquiagem,
               com o cuidado e o acolhimento que você merece.
             </p>
             <div className="mt-6 flex gap-3">

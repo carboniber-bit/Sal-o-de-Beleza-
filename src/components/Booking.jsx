@@ -61,7 +61,7 @@ export default function Booking({ prefill, notify }) {
 
   const validate = (f) => {
     const e = {}
-    if (!f.name.trim()) e.name = 'Conta pra gente seu nome — assim sabemos quem vamos receber.'
+    if (!f.name.trim()) e.name = 'Conta pra gente seu nome, assim sabemos quem vamos receber.'
     else if (f.name.trim().length < 2) e.name = 'Seu nome parece incompleto. Pode escrever o nome completo?'
     const digits = f.phone.replace(/\D/g, '')
     if (!digits) e.phone = 'Precisamos do seu WhatsApp para confirmar o horário com você.'
@@ -75,7 +75,7 @@ export default function Booking({ prefill, notify }) {
       const t = parseDate(todayStr())
       if (d < t) e.date = 'Essa data já passou. Escolha hoje ou um dia futuro.'
       else if ([0, 1].includes(d.getDay()))
-        e.date = `${HOURS[d.getDay()].day} o salão está fechado. Atendemos de terça a sábado — que tal escolher um desses dias?`
+        e.date = `${HOURS[d.getDay()].day} o salão está fechado. Atendemos de terça a sábado. Que tal escolher um desses dias?`
     }
     if (!f.time) e.time = 'Escolha o horário que fica melhor para você.'
     else if (isToday && !SLOTS.includes(f.time)) e.time = 'Esse horário não está mais disponível hoje. Escolha outro.'
@@ -107,7 +107,7 @@ export default function Booking({ prefill, notify }) {
     setErrors(e)
     setTouched({ name: true, phone: true, cat: true, service: true, date: true, time: true })
     if (Object.keys(e).length) {
-      notify('Alguns campos precisam de atenção — veja as mensagens em vermelho.', 'warn')
+      notify('Alguns campos precisam de atenção: veja as mensagens em vermelho.', 'warn')
       const first = document.querySelector('[aria-invalid="true"]')
       first?.focus()
       return
@@ -185,7 +185,7 @@ export default function Booking({ prefill, notify }) {
           </p>
           <ol className="reveal mt-8 space-y-4" style={{ '--reveal-delay': '200ms' }}>
             {[
-              ['Escolha o serviço', 'Especialidade, serviço, dia e horário — do seu jeito.'],
+              ['Escolha o serviço', 'Especialidade, serviço, dia e horário, do seu jeito.'],
               ['Envie pelo WhatsApp', 'Seu pedido chega prontinho para a nossa equipe.'],
               ['Receba a confirmação', 'Confirmamos o horário e te esperamos com café e bolo.'],
             ].map(([t, d], i) => (
@@ -202,7 +202,7 @@ export default function Booking({ prefill, notify }) {
           </ol>
           <div className="reveal mt-8 flex items-start gap-3 rounded-2xl border border-info/25 bg-info/8 p-4 text-sm text-ink-700" style={{ '--reveal-delay': '260ms' }}>
             <Icon name="info" className="mt-0.5 w-4.5 h-4.5 shrink-0 text-info" />
-            <p>Atendemos de <strong>terça a sábado, das 9h às 19h</strong>. Precisa remarcar ou cancelar? É só avisar pelo WhatsApp com 4h de antecedência — sem taxa.</p>
+            <p>Atendemos de <strong>terça a sábado, das 9h às 19h</strong>. Precisa remarcar ou cancelar? É só avisar pelo WhatsApp com 4h de antecedência, sem taxa.</p>
           </div>
         </div>
 
@@ -214,7 +214,7 @@ export default function Booking({ prefill, notify }) {
               </span>
               <h3 className="mt-5 font-display text-4xl text-ink-900">Obrigada, {done.name.trim().split(' ')[0]}!</h3>
               <p className="mt-3 text-ink-500">
-                Seu pedido de agendamento está pronto. Toque no botão abaixo para enviar pelo WhatsApp —
+                Seu pedido de agendamento está pronto. Toque no botão abaixo para enviar pelo WhatsApp:
                 é o último passo para garantir seu horário.
               </p>
               <dl className="mx-auto mt-6 max-w-sm space-y-2 rounded-2xl bg-blush-100 p-5 text-left text-sm">

@@ -24,7 +24,7 @@ export default function Reviews() {
           <div>
             <p className="reveal text-[11px] font-condensed font-semibold uppercase tracking-[0.28em] text-gold-400">Avaliações</p>
             <h2 className="reveal mt-3 font-display text-4xl leading-tight text-blush-100 sm:text-5xl" style={{ '--reveal-delay': '80ms' }}>
-              Quem vem, <em className="italic text-petal-300">volta</em> — e recomenda
+              Quem vem, <em className="italic text-petal-300">volta</em> e recomenda
             </h2>
             <div className="reveal mt-8 flex items-end gap-5" style={{ '--reveal-delay': '160ms' }}>
               <p className="font-display text-7xl font-semibold text-gold-400">5.0</p>

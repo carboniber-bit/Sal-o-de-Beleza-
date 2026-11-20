@@ -31,7 +31,7 @@ export default function Hero() {
           </h1>
           <p className="staged mt-6 max-w-xl text-lg text-ink-500 leading-relaxed" style={{ '--stage-delay': '240ms' }}>
             No <strong className="text-ink-800 font-semibold">Studio E</strong>, cada detalhe é cuidado com carinho:
-            unhas impecáveis, olhar marcante e momentos de puro bem-estar — com café e bolo esperando por você.
+            unhas impecáveis, olhar marcante e momentos de puro bem-estar, com café e bolo esperando por você.
           </p>
 
           <div className="staged mt-6 flex flex-wrap gap-2" style={{ '--stage-delay': '340ms' }}>

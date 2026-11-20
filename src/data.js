@@ -3,7 +3,7 @@ export const SALON = {
   tagline: 'Salão de Beleza',
   phone: '(11) 95407-9852',
   phoneRaw: '5511954079852',
-  address: 'R. João de Deus, 397 — Bela Vista, Osasco · SP, 06060-210',
+  address: 'R. João de Deus, 397, Bela Vista, Osasco · SP, 06060-210',
   addressShort: 'Rua João de Deus, 397 · Bela Vista · Osasco',
   instagram: 'https://www.instagram.com/salaostudioe_/',
   instagramHandle: '@salaostudioe_',
@@ -56,7 +56,7 @@ export const CATEGORIES = [
     label: 'Unhas',
     icon: 'nail',
     image: '/images/unhas-poas.jpg',
-    blurb: 'Manicure e pedicure caprichosas, do clássico ao nail art — a especialidade da casa.',
+    blurb: 'Manicure e pedicure caprichosas, do clássico ao nail art, a especialidade da casa.',
     services: [
       { name: 'Manicure tradicional', desc: 'Cutilagem cuidadosa + esmaltação', price: 35, time: '45 min' },
       { name: 'Pedicure completa', desc: 'Cutilagem, esfoliação e esmaltação', price: 45, time: '50 min' },
@@ -86,7 +86,7 @@ export const CATEGORIES = [
     label: 'Cílios & Sobrancelhas',
     icon: 'lash',
     image: '/images/cilios-volume.jpg',
-    blurb: 'Olhar marcante todos os dias, sem esforço — extensão de cílios e design de sobrancelhas.',
+    blurb: 'Olhar marcante todos os dias, sem esforço, com extensão de cílios e design de sobrancelhas.',
     services: [
       { name: 'Extensão de cílios clássica', desc: 'Fio a fio, efeito natural', price: 120, time: '2h' },
       { name: 'Volume brasileiro', desc: 'Volume leve e elegante em Y', price: 150, time: '2h' },
@@ -149,10 +149,10 @@ export const CATEGORIES = [
 ]
 
 export const GALLERY = [
-  { src: '/images/unhas-dourado.jpg', cat: 'unhas', title: 'Dourado metalizado — a cor da casa', tall: true },
+  { src: '/images/unhas-dourado.jpg', cat: 'unhas', title: 'Dourado metalizado, a cor da casa', tall: true },
   { src: '/images/cabelo-ondas.jpg', cat: 'cabelo', title: 'Ondas modeladas com brilho', tall: true },
-  { src: '/images/cilios-volume.jpg', cat: 'cilios', title: 'Extensão de cílios — olhar marcante' },
-  { src: '/images/unhas-poas.jpg', cat: 'unhas', title: 'Nail art — poá preto e branco' },
+  { src: '/images/cilios-volume.jpg', cat: 'cilios', title: 'Extensão de cílios, olhar marcante' },
+  { src: '/images/unhas-poas.jpg', cat: 'unhas', title: 'Nail art: poá preto e branco' },
   { src: '/images/salao.jpg', cat: 'salao', title: 'Nosso espaço: recepção e atendimento', tall: true },
   { src: '/images/unhas-vermelho.jpg', cat: 'unhas', title: 'Clássico vermelho intenso' },
   { src: '/images/cabelo-cachos.jpg', cat: 'cabelo', title: 'Cachos definidos e iluminados', tall: true },
@@ -160,15 +160,15 @@ export const GALLERY = [
   { src: '/images/unhas-glitter.jpg', cat: 'unhas', title: 'Azul sereno com glitter', tall: true },
   { src: '/images/massagem-pedras.jpg', cat: 'massagem', title: 'Massagem com pedras quentes' },
   { src: '/images/cabelo-liso.jpg', cat: 'cabelo', title: 'Iluminado dourado em fios lisos', tall: true },
-  { src: '/images/unhas-gel.jpg', cat: 'unhas', title: 'Efeito gel — azul vibrante' },
-  { src: '/images/cilios-natural.jpg', cat: 'cilios', title: 'Cílios fio a fio — efeito natural', tall: true },
+  { src: '/images/unhas-gel.jpg', cat: 'unhas', title: 'Efeito gel: azul vibrante' },
+  { src: '/images/cilios-natural.jpg', cat: 'cilios', title: 'Cílios fio a fio: efeito natural', tall: true },
   { src: '/images/unhas-marinho.jpg', cat: 'unhas', title: 'Marinho fosco + azul magnético' },
   { src: '/images/sala-massagem.jpg', cat: 'massagem', title: 'Sala de massagem e estética' },
   { src: '/images/unhas-prata.jpg', cat: 'unhas', title: 'Prata cromada espelhada' },
   { src: '/images/cabelo-penteado.jpg', cat: 'cabelo', title: 'Semipreso com ondas glam', tall: true },
   { src: '/images/unhas-azul.jpg', cat: 'unhas', title: 'Azul royal em todos os tons de pele' },
-  { src: '/images/unhas-vinho.jpg', cat: 'unhas', title: 'Vinho profundo — unhas bem feitas', tall: true },
-  { src: '/images/maquiagem.png', cat: 'maquiagem', title: 'Make social — pele glow' },
+  { src: '/images/unhas-vinho.jpg', cat: 'unhas', title: 'Vinho profundo, unhas bem feitas', tall: true },
+  { src: '/images/maquiagem.png', cat: 'maquiagem', title: 'Make social: pele glow' },
 ]
 
 export const GALLERY_FILTERS = [
@@ -213,11 +213,11 @@ export const FAQS = [
   },
   {
     q: 'Preciso levar algum material para as unhas?',
-    a: 'Não! Trabalhamos com materiais profissionais esterilizados. Se você tiver um esmalte queridinho ou alergias a algum produto, pode trazer ou nos avisar — cuidamos de tudo com segurança.',
+    a: 'Não! Trabalhamos com materiais profissionais esterilizados. Se você tiver um esmalte queridinho ou alergias a algum produto, pode trazer ou nos avisar. Cuidamos de tudo com segurança.',
   },
   {
     q: 'Quanto tempo dura a extensão de cílios?',
-    a: 'Em média de 3 a 4 semanas, dependendo dos cuidados e do ciclo natural dos fios. Recomendamos manutenção a cada 2–3 semanas para manter o volume sempre bonito. Enviamos as orientações de cuidado após o procedimento.',
+    a: 'Em média de 3 a 4 semanas, dependendo dos cuidados e do ciclo natural dos fios. Recomendamos manutenção a cada 2 a 3 semanas para manter o volume sempre bonito. Enviamos as orientações de cuidado após o procedimento.',
   },
   {
     q: 'Posso remarcar ou cancelar um horário?',
@@ -225,7 +225,7 @@ export const FAQS = [
   },
   {
     q: 'Onde fica o salão e como chego?',
-    a: 'Estamos na Rua João de Deus, 397 — Bela Vista, Osasco/SP (CEP 06060-210). O mapa na seção de contato abre a rota direto no seu celular. Ficamos pertinho do centro de Osasco.',
+    a: 'Estamos na Rua João de Deus, 397, Bela Vista, Osasco/SP (CEP 06060-210). O mapa na seção de contato abre a rota direto no seu celular. Ficamos pertinho do centro de Osasco.',
   },
   {
     q: 'Vocês atendem noivas e grupos?',

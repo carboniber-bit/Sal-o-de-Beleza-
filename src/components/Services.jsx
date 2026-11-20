@@ -23,7 +23,7 @@ export default function Services({ onBook }) {
   }
 
   return (
-    <section id="servicos" ref={ref} className="relative overflow-hidden py-20 lg:py-28">
+    <section id="servicos" ref={ref} className="relative overflow-x-clip py-20 lg:py-28">
       <div aria-hidden="true" className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-b from-blush-50 via-white to-blush-100" />
         <div className="absolute top-40 -left-40 h-96 w-96 rounded-full bg-petal-300/20 blur-3xl animate-drift" />
@@ -37,7 +37,7 @@ export default function Services({ onBook }) {
             Tudo o que você ama, <em className="italic text-petal-600">em um só lugar</em>
           </h2>
           <p className="mt-4 text-ink-500">
-            Escolha uma especialidade para ver os serviços e valores. Valores “a partir de” — o orçamento final é
+            Escolha uma especialidade para ver os serviços e valores. Valores “a partir de”: o orçamento final é
             confirmado com você antes de começar, sem surpresas.
           </p>
         </div>
@@ -76,22 +76,21 @@ export default function Services({ onBook }) {
           role="tabpanel"
           id={`panel-${active.id}`}
           aria-labelledby={`tab-${active.id}`}
-          className="mt-10 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] animate-pop"
+          className="mt-10 grid items-start gap-8 lg:grid-cols-[0.9fr_1.1fr] animate-pop"
         >
-          <div className="relative overflow-hidden rounded-[2rem] border border-blush-200 shadow-xl shadow-petal-600/10 min-h-64">
+          <div className="relative overflow-hidden rounded-[2rem] border border-blush-200 bg-blush-50 shadow-xl shadow-petal-600/10 lg:sticky lg:top-24">
             <img
               src={active.image}
               alt={`Serviços de ${active.label} no Studio E`}
-              className="absolute inset-0 h-full w-full object-cover"
+              className="block h-auto w-full max-h-[calc(100vh-7rem)] object-contain"
               loading="lazy"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-ink-900/85 via-ink-900/25 to-transparent" />
-            <div className="relative flex h-full min-h-64 flex-col justify-end p-7">
+            <div className="border-t border-blush-200 bg-gradient-to-br from-white to-blush-100 p-6">
               <span className="inline-flex w-fit items-center gap-2 rounded-full bg-gold-500/90 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-ink-900">
                 <Icon name={active.icon} className="w-4 h-4" />
                 {active.label}
               </span>
-              <p className="mt-3 max-w-sm font-display text-xl italic leading-snug text-blush-100">{active.blurb}</p>
+              <p className="mt-3 font-display text-lg italic leading-snug text-ink-700">{active.blurb}</p>
             </div>
           </div>
 
@@ -128,7 +127,7 @@ export default function Services({ onBook }) {
 
         <p className="reveal mt-8 flex items-center justify-center gap-2 text-center text-sm text-ink-400" style={{ '--reveal-delay': '150ms' }}>
           <Icon name="info" className="w-4 h-4 shrink-0 text-info" />
-          Não encontrou o que procura? Fale com a gente pelo WhatsApp — montamos um pacote especial para você.
+          Não encontrou o que procura? Fale com a gente pelo WhatsApp: montamos um pacote especial para você.
         </p>
       </div>
     </section>

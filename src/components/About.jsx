@@ -21,7 +21,7 @@ const REASONS = [
   {
     icon: 'users',
     title: 'Atendimento personalizado',
-    text: 'Escutamos o que você deseja antes de começar — o resultado é a sua cara, não uma fórmula.',
+    text: 'Escutamos o que você deseja antes de começar: o resultado é a sua cara, não uma fórmula.',
   },
 ]
 
@@ -107,11 +107,11 @@ export default function About() {
           <p className="reveal mt-6 text-lg leading-relaxed text-ink-500" style={{ '--reveal-delay': '200ms' }}>
             O <strong className="text-ink-800">Studio E Salão de Beleza</strong> nasceu em Osasco com uma missão simples:
             unir técnica impecável e um acolhimento que faz você se sentir em casa. Somos especialistas em{' '}
-            <strong className="text-ink-800">estética facial e corporal</strong> — unhas, cabelo, cílios, massagem e maquiagem.
+            <strong className="text-ink-800">estética facial e corporal</strong>: unhas, cabelo, cílios, massagem e maquiagem.
           </p>
           <p className="reveal mt-4 leading-relaxed text-ink-500" style={{ '--reveal-delay': '260ms' }}>
             Clientes que estão conosco há anos dizem a mesma coisa: o atendimento é diferenciado. Cada visita é pensada
-            nos mínimos detalhes, com cuidado, segurança e atenção — do agendamento ao último retoque.
+            nos mínimos detalhes, com cuidado, segurança e atenção, do agendamento ao último retoque.
           </p>
           <ul className="reveal mt-8 grid gap-3 sm:grid-cols-2" style={{ '--reveal-delay': '320ms' }}>
             {BADGES.map((b) => (

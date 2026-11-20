@@ -21,7 +21,7 @@ export default function Contact() {
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
           <div className="reveal relative overflow-hidden rounded-[2rem] border border-blush-200 shadow-xl shadow-petal-600/10 lg:col-span-1 min-h-72">
             <iframe
-              title="Mapa: Studio E Salão de Beleza — Rua João de Deus, 397, Bela Vista, Osasco"
+              title="Mapa: Studio E Salão de Beleza, Rua João de Deus, 397, Bela Vista, Osasco"
               src={SALON.mapsQuery}
               className="absolute inset-0 h-full w-full border-0"
               loading="lazy"
@@ -62,11 +62,11 @@ export default function Contact() {
                     {h.day}
                     {i === today && <span className="ml-2 rounded-full bg-petal-500 px-2 py-0.5 text-[10px] font-bold uppercase text-white">hoje</span>}
                   </span>
-                  <span>{h.open === null ? 'Fechado' : `${h.open}h — ${h.close}h`}</span>
+                  <span>{h.open === null ? 'Fechado' : `${h.open}h às ${h.close}h`}</span>
                 </li>
               ))}
             </ul>
-            <p className="mt-4 text-xs text-ink-400">{status.label}. Feriados podem alterar os horários — confirme pelo WhatsApp.</p>
+            <p className="mt-4 text-xs text-ink-400">{status.label}. Feriados podem alterar os horários; confirme pelo WhatsApp.</p>
           </div>
 
           <div className="reveal flex flex-col gap-4" style={{ '--reveal-delay': '200ms' }}>
@@ -81,7 +81,7 @@ export default function Contact() {
                     <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-success/12 text-success"><Icon name="whatsapp" className="w-4.5 h-4.5" /></span>
                     <span>
                       <span className="block font-semibold text-ink-900 group-hover:text-success transition-colors">{SALON.phone}</span>
-                      <span className="text-ink-400">WhatsApp — resposta rápida</span>
+                      <span className="text-ink-400">WhatsApp: resposta rápida</span>
                     </span>
                   </a>
                 </li>
@@ -98,7 +98,7 @@ export default function Contact() {
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gold-500/15 text-gold-600"><Icon name="pin" className="w-4.5 h-4.5" /></span>
                   <span>
                     <span className="block font-semibold text-ink-900">R. João de Deus, 397</span>
-                    <span className="text-ink-400">Bela Vista, Osasco · SP — 06060-210</span>
+                    <span className="text-ink-400">Bela Vista, Osasco · SP, 06060-210</span>
                   </span>
                 </li>
               </ul>
